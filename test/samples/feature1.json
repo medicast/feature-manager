@@ -1,0 +1,15 @@
+{
+	"some.feature" : true,
+	"feature.with.options": {
+		"enabled": true,
+		"option1": "Yes!"
+	},
+	"feature.explicitly.disabled": false,
+	"feature.with.options.explicitly.not.enabled": {
+		"enabled" : false
+	},
+	"feature.with.options.explicitly.disabled": {
+		"disabled" : true,
+		"optionX" : {}
+	}
+}

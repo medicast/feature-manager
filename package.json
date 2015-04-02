@@ -1,0 +1,37 @@
+{
+  "name": "feature-manager",
+  "description": "Feature flag manager for SaaS and white-label products",
+  "author": "Nafis Zebarjadi <nafis@medicast.co>",
+  "version": "0.1.0",
+  "maintainers": [
+    "Nafis Zebarjadi <nafis@medicast.co> (https://www.medicast.com)"
+  ],
+  "bugs": {
+    "url": "https://github.com/medicast/feature-manager/issues"
+  },
+  "repository": [
+    {
+      "type": "git",
+      "url": "https://github.com/medicast/feature-manager.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "https://github.com/medicast/feature-manager/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.1.20",
+    "extend": "^2.0.0"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "should": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "MIT"
+}
