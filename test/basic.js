@@ -96,15 +96,12 @@ describe('Initializing FeatureManager', function() {
 			fm3.expires.should.equal(0);
         });
 
-        it('should read the local file without error', function() {
-			return fm3.getFeatureList();
-        });
-
         it('should read the local file and get the correct feature list', function(done) {
 			fm3.getFeatureList().then(
 				function(result) {
 					try {
 						should(result).be.an.object;
+						should(result).be.ok;
 						should(result).eql(featureList);
 						done();
 					} catch (ex) {
