@@ -140,8 +140,8 @@ describe('Using FeatureManager', function() {
 			sourcePath: 'devtest/feature1.json',
 			ttl: 86400,
 			aws: {
-				accessKeyId: 'AKIAJ64HLEVOHBMMDWWQ',
-				secretAccessKey: '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'
+				accessKeyId: '',
+				secretAccessKey: ''
 			}
 		};
 		var fm3 = new FeatureManager(config);
