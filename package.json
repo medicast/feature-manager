@@ -1,5 +1,5 @@
 {
-  "name": "@medicast/feature-manager",
+  "name": "feature-manager",
   "description": "Feature flag manager for SaaS and white-label products",
   "author": "Nafis Zebarjadi <nafis@medicast.co>",
   "version": "0.2.0",
