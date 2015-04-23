@@ -80,8 +80,7 @@ describe('Using FeatureManager', function() {
 			"feature.with.options.explicitly.not.enabled": {
 				"enabled" : false,
 			},
-			"feature.with.options.explicitly.disabled": {
-				"disabled" : true,
+			"feature.with.options.implicitly.enabled": {
 				"optionX" : {}
 			}
 		};
@@ -125,8 +124,7 @@ describe('Using FeatureManager', function() {
 			should(fm3.isEnabledSync('feature.not.listed')).not.be.ok;
 			should(fm3.isEnabledSync('feature.explicitly.disabled')).equal(false);
 			should(fm3.isEnabledSync('feature.with.options.explicitly.not.enabled')).equal(false);
-			should(fm3.isEnabledSync('feature.with.options.explicitly.disabled')).equal(false);
-
+			should(fm3.isEnabledSync('feature.with.options.implicitly.enabled')).equal(true);
         });
 
     });
@@ -201,8 +199,6 @@ describe('Using FeatureManager', function() {
 			should(fm3.isEnabledSync('feature.not.listed')).not.be.ok;
 			should(fm3.isEnabledSync('feature.explicitly.disabled')).equal(false);
 			should(fm3.isEnabledSync('feature.with.options.explicitly.not.enabled')).equal(false);
-			should(fm3.isEnabledSync('feature.with.options.explicitly.disabled')).equal(false);
-
         });
 
     });

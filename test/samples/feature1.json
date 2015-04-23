@@ -8,8 +8,7 @@
 	"feature.with.options.explicitly.not.enabled": {
 		"enabled" : false
 	},
-	"feature.with.options.explicitly.disabled": {
-		"disabled" : true,
+	"feature.with.options.implicitly.enabled": {
 		"optionX" : {}
 	}
 }
